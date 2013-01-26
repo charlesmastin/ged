@@ -1,0 +1,8 @@
+<article class="intensity-{{ task.intensity }}">
+	<h2>{{ task.name }}</h2>
+	<p>{{ task.description }}</p>
+	{% if task.due_date %}
+	<time datetime="{{ task.due_date }}">{{ task.due_date }}</time>
+	{% endif %}
+	<small>{{ task.origin }}</small>
+</article>
