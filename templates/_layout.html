@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>G(et) H(er) D(one)</title>
-	<link href="{{ STATIC_URL }}css/master.css" media="screen" rel="stylesheet" />
+	<title>Git Er Done</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="screen" rel="stylesheet" />
+	<link href="{{ url_for('static', filename='css/master.css') }}" media="screen" rel="stylesheet" />
 	{% block styles %}{% endblock %}
 	{% block extra_head %}{% endblock %}
 </head>
@@ -18,9 +19,10 @@
 		<small>Loading</small>
 	</div>
 	
-	<script src="{{ STATIC_URL }}js/underscore-min.js"></script>
-	<script src="{{ STATIC_URL }}js/jquery-1.9.min.js"></script>
-	<script src="{{ STATIC_URL }}js/ghd.js"></script>
+	<script src="{{ url_for('static', filename='js/underscore-min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/ged.js') }}"></script>
 
 	{% block scripts %}
 	{% endblock %}

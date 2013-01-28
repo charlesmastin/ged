@@ -1,0 +1,27 @@
+{% extends '_layout.html' %}
+{% block content %}
+<section class="tasks grid">
+{% for task in tasks %}
+{% include '_task.html' %}
+{% endfor %}
+</section>
+
+
+<a href="#myModal" role="button" class="btn" data-toggle="modal">New Task</a>
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 class="form-field" data-attribute="name" contenteditable="true">Task name</h3>
+  </div>
+  <div class="modal-body">
+    <p class="form-field" contenteditable="true" data-attribute="description">Some details…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button id="save-task" class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+
+{% endblock %}

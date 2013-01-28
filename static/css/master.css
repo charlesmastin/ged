@@ -1,0 +1,33 @@
+body {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1em;
+}
+.tasks.list .task {
+  background: #f4f4f4;
+  padding: 5px 10px 5px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.actions li {
+  display: inline-block;
+}
+.tasks.grid .task {
+  width: 240px;
+  height: 120px;
+  float: left;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 10px 5px 0px 5px;
+}
+.tasks.grid .task:hover {
+  background: #f4f4f4;
+  -webkit-transition: background 0.2s linear;
+}
+#network-activity {
+  display: none;
+}
