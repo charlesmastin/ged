@@ -13,8 +13,19 @@ h2 {
   padding: 5px 10px 5px 20px;
   border-bottom: 1px solid #ccc;
 }
+.modal {
+  width: 480px;
+  margin-left: -240px;
+}
+.modal textarea {
+  width: 430px;
+}
 .actions li {
   display: inline-block;
+}
+.task time {
+  font-size: 11px;
+  font-weight: bold;
 }
 .tasks.grid .task {
   width: 240px;

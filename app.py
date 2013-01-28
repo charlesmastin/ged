@@ -54,7 +54,7 @@ class TaskForm(Form):
 @app.route('/', methods=['GET'])
 def index():
 	# json_util.dumps(mongo.tasks.find({})[:])
-	return render_template('index.html', tasks=mongo.tasks.find({'completed_at': {"$exists": False}}))
+	return render_template('index.html', tasks=mongo.tasks.find({'completed_at': {"$exists": False}}).sort('due_date', 1))
 
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
